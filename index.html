@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>20260528 主管面談交辦事項｜工作重點討論</title>
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5b6673;
+      --line: #d7dde5;
+      --soft: #f5f7fa;
+      --accent: #0f766e;
+      --accent-soft: #e6f4f1;
+      --paper: #ffffff;
+      --warn: #9a5b00;
+      --warn-soft: #fff3d6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+      line-height: 1.65;
+      background: #eef2f6;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 32px auto;
+      padding: 40px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      padding-left: 12px;
+      border-left: 5px solid var(--accent);
+      font-size: 23px;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.4;
+      letter-spacing: 0;
+    }
+
+    .note {
+      margin: 16px 0 0;
+      padding: 14px 16px;
+      color: var(--warn);
+      background: var(--warn-soft);
+      border: 1px solid #f4cf82;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .topic {
+      min-height: 150px;
+      padding: 18px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .topic p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .discussion-points {
+      margin: 12px 0 0;
+      padding-left: 1.25em;
+      color: var(--ink);
+    }
+
+    .discussion-points li {
+      margin: 6px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 15px;
+    }
+
+    th,
+    td {
+      padding: 12px 10px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #0b3f3a;
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+
+    td {
+      height: 48px;
+    }
+
+    .field-note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+        border: 0;
+      }
+
+      .topic {
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        width: min(100% - 24px, 1120px);
+        margin: 16px auto;
+        padding: 22px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">2026/05/28 主管面談交辦事項</p>
+      <h1>本專案工作重點討論架構</h1>
+      <p class="subtitle">供組員共同討論使用。本階段先確認工作主軸、討論範圍與未來管控欄位，實質工作項目留待下一階段展開。</p>
+    </header>
+
+    <section>
+      <h2>一、討論目的</h2>
+      <p>將主管交辦事項整理為本專案第一版工作管控架構，協助組員先對齊工作方向、分類方式與後續追蹤欄位。</p>
+      <div class="note">本次會議不先決定細部工作項目，重點是確認「要管控哪些工作主軸」以及「未來管控表需要哪些欄位」。</div>
+    </section>
+
+    <section>
+      <h2>二、工作重點主軸</h2>
+      <div class="grid">
+        <article class="topic">
+          <h3>1. 現場數位表單填寫現況</h3>
+          <p>釐清現場表單是在工地即時填寫，或回到辦公室後補填，並理解背後原因。</p>
+          <ul class="discussion-points">
+            <li>現場填寫與延遲填寫的實際狀況</li>
+            <li>一線人員使用數位表單的理解程度</li>
+            <li>表單標準值是否過於冗長</li>
+          </ul>
+        </article>
+
+        <article class="topic">
+          <h3>2. 一線人員問卷與回饋</h3>
+          <p>透過問卷掌握現場人員的操作經驗、阻礙因素與改善建議。</p>
+          <ul class="discussion-points">
+            <li>問卷欲了解的核心問題</li>
+            <li>受訪對象與回收方式</li>
+            <li>回饋資料後續如何分類與運用</li>
+          </ul>
+        </article>
+
+        <article class="topic">
+          <h3>3. 駐外辦公場所流程優化</h3>
+          <p>檢視現行流程是否過於僵化，並轉向協助工地實際執行的角度。</p>
+          <ul class="discussion-points">
+            <li>流程文件是否僅為呈報使用</li>
+            <li>應注意事項是否可改以附件清單呈現</li>
+            <li>如何讓流程更能幫助工地</li>
+          </ul>
+        </article>
+
+        <article class="topic">
+          <h3>4. 材試平台上架後推廣</h3>
+          <p>PMIS全面上架後，需安排推廣、回饋收斂、功能修正與使用督導。</p>
+          <ul class="discussion-points">
+            <li>6/3線上研討回饋與功能修正</li>
+            <li>6月份線上座談會與工聯單邀集</li>
+            <li>7/3駐外主管經驗交流與後續督導</li>
+          </ul>
+        </article>
+
+        <article class="topic">
+          <h3>5. AI客服與知識輔助</h3>
+          <p>思考平台推廣後如何以AI客服、手冊、影片與快速提示降低學習成本。</p>
+          <ul class="discussion-points">
+            <li>文字與語音客服需求</li>
+            <li>手冊、教學影片與亮點提示</li>
+            <li>知識內容如何持續更新</li>
+          </ul>
+        </article>
+
+        <article class="topic">
+          <h3>6. 自來水邀約講座簡報更新</h3>
+          <p>調整60分鐘講課內容，納入政策、標準、系統亮點與數位化效益。</p>
+          <ul class="discussion-points">
+            <li>工程會政策與資料交換標準</li>
+            <li>表單倉庫、DMIS決策層儀表板等亮點</li>
+            <li>功能教學與數位化好處的比例配置</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>三、未來工作管控表欄位</h2>
+      <p class="field-note">以下為後續建立工作管控表時可使用的欄位，本階段先確認欄位是否足夠，不填入細部工作項目。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>編號</th>
+            <th>工作主軸</th>
+            <th>工作事項</th>
+            <th>負責單位/人員</th>
+            <th>協辦單位/人員</th>
+            <th>目前狀態</th>
+            <th>優先程度</th>
+            <th>預定完成日</th>
+            <th>需協調事項</th>
+            <th>預期產出</th>
+            <th>追蹤備註</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>四、會議討論順序建議</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>順序</th>
+            <th>討論內容</th>
+            <th>討論目標</th>
+            <th>是否需形成決議</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>確認六大工作主軸是否完整</td>
+            <td>決定本專案第一層分類</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>確認各主軸下的小標題是否需調整</td>
+            <td>讓後續工作拆解有共同語言</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>確認管控表欄位是否足夠</td>
+            <td>建立後續追蹤格式</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>保留實質工作項目至下一階段</td>
+            <td>避免本次會議過早進入細節</td>
+            <td>否</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="footer">版本：V1｜用途：組內討論用｜下一階段：依討論結果展開實質工作項目、責任分工與時程。</p>
+  </main>
+</body>
+</html>
