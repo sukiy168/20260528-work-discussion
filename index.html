@@ -3,34 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>20260528 主管面談交辦事項｜工作重點討論</title>
+  <title>台北自來水事業處簡報大綱｜公共工程數位賦能</title>
   <style>
     :root {
       --ink: #1f2933;
-      --muted: #5b6673;
-      --line: #d7dde5;
-      --soft: #f5f7fa;
-      --accent: #0f766e;
-      --accent-soft: #e6f4f1;
+      --muted: #586575;
+      --line: #d8dee8;
       --paper: #ffffff;
-      --warn: #9a5b00;
-      --warn-soft: #fff3d6;
+      --soft: #f5f7fb;
+      --blue: #1d4ed8;
+      --blue-soft: #eaf1ff;
+      --teal: #0f766e;
+      --teal-soft: #e5f5f2;
+      --amber: #a15c00;
+      --amber-soft: #fff1d6;
+      --rose: #b42318;
+      --rose-soft: #fdebea;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       color: var(--ink);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
       line-height: 1.65;
-      background: #eef2f6;
+      background: #edf1f6;
     }
 
     .page {
-      width: min(1120px, calc(100% - 40px));
+      width: min(1180px, calc(100% - 40px));
       margin: 32px auto;
       padding: 40px;
       background: var(--paper);
@@ -40,37 +42,36 @@
 
     header {
       padding-bottom: 24px;
-      border-bottom: 3px solid var(--accent);
+      border-bottom: 4px solid var(--blue);
     }
 
     .eyebrow {
       margin: 0 0 8px;
-      color: var(--accent);
+      color: var(--blue);
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     h1 {
       margin: 0;
-      font-size: 30px;
-      line-height: 1.3;
+      font-size: 31px;
+      line-height: 1.32;
       letter-spacing: 0;
     }
 
     .subtitle {
+      max-width: 900px;
       margin: 14px 0 0;
       color: var(--muted);
       font-size: 16px;
     }
 
-    section {
-      margin-top: 34px;
-    }
+    section { margin-top: 34px; }
 
     h2 {
       margin: 0 0 14px;
       padding-left: 12px;
-      border-left: 5px solid var(--accent);
+      border-left: 5px solid var(--blue);
       font-size: 23px;
       line-height: 1.35;
       letter-spacing: 0;
@@ -83,56 +84,27 @@
       letter-spacing: 0;
     }
 
-    .note {
-      margin: 16px 0 0;
+    p { margin: 0 0 12px; }
+
+    .callout {
+      margin-top: 16px;
       padding: 14px 16px;
-      color: var(--warn);
-      background: var(--warn-soft);
-      border: 1px solid #f4cf82;
+      background: var(--amber-soft);
+      border: 1px solid #efc46d;
       border-radius: 6px;
-      font-weight: 600;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 18px;
-    }
-
-    .topic {
-      min-height: 150px;
-      padding: 18px;
-      background: var(--soft);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-    }
-
-    .topic p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .discussion-points {
-      margin: 12px 0 0;
-      padding-left: 1.25em;
-      color: var(--ink);
-    }
-
-    .discussion-points li {
-      margin: 6px 0;
+      color: var(--amber);
+      font-weight: 700;
     }
 
     table {
       width: 100%;
+      margin-top: 14px;
       border-collapse: collapse;
-      margin-top: 16px;
       font-size: 15px;
     }
 
-    th,
-    td {
-      padding: 12px 10px;
+    th, td {
+      padding: 11px 10px;
       border: 1px solid var(--line);
       text-align: left;
       vertical-align: top;
@@ -140,250 +112,412 @@
 
     th {
       color: #0b3f3a;
-      background: var(--accent-soft);
-      font-weight: 700;
+      background: var(--teal-soft);
+      font-weight: 800;
     }
 
-    td {
-      height: 48px;
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
     }
 
-    .field-note {
+    .slide-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .slide {
+      min-height: 126px;
+      padding: 16px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .slide .no {
+      display: inline-block;
+      min-width: 34px;
+      margin-bottom: 8px;
+      color: #ffffff;
+      background: var(--blue);
+      border-radius: 4px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .slide p {
       color: var(--muted);
-      font-size: 14px;
+      margin: 0;
+    }
+
+    .diagram-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .diagram {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .visual {
+      display: grid;
+      gap: 8px;
+      min-height: 130px;
+      margin: 12px 0;
+      padding: 14px;
+      border: 1px dashed #b9c3d3;
+      border-radius: 8px;
+      background: #f8fafc;
+    }
+
+    .nodes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .node {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #a8b7ce;
+      border-radius: 6px;
+      background: #ffffff;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .arrow {
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .tower {
+      display: grid;
+      gap: 8px;
+      align-content: end;
+    }
+
+    .tier {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .tier.one { background: #dbeafe; }
+    .tier.two { background: #ccfbf1; width: 78%; margin: 0 auto; }
+    .tier.three { background: #fef3c7; width: 56%; margin: 0 auto; }
+
+    .islands {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      align-items: center;
+    }
+
+    .island {
+      min-height: 70px;
+      padding: 10px;
+      background: var(--rose-soft);
+      border: 1px solid #f3b5af;
+      border-radius: 999px;
+      color: var(--rose);
+      text-align: center;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .dictionary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .term {
+      padding: 8px;
+      border: 1px solid #9ac7c0;
+      border-radius: 6px;
+      background: var(--teal-soft);
+      text-align: center;
+      font-size: 13px;
+      font-weight: 800;
     }
 
     .footer {
       margin-top: 32px;
       padding-top: 18px;
-      color: var(--muted);
       border-top: 1px solid var(--line);
+      color: var(--muted);
       font-size: 14px;
     }
 
-    @media print {
-      body {
-        background: #ffffff;
-      }
-
+    @media (max-width: 820px) {
       .page {
-        width: 100%;
-        margin: 0;
-        padding: 24px;
-        border: 0;
-      }
-
-      .topic {
-        break-inside: avoid;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .page {
-        width: min(100% - 24px, 1120px);
+        width: min(100% - 24px, 1180px);
         margin: 16px auto;
         padding: 22px;
       }
 
-      h1 {
-        font-size: 25px;
-      }
+      h1 { font-size: 25px; }
+      .slide-list, .diagram-grid { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
 
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
+    @media print {
+      body { background: #ffffff; }
+      .page { width: 100%; margin: 0; border: 0; }
+      .slide, .diagram { break-inside: avoid; }
     }
   </style>
 </head>
 <body>
   <main class="page">
     <header>
-      <p class="eyebrow">2026/05/28 主管面談交辦事項</p>
-      <h1>本專案工作重點討論架構</h1>
-      <p class="subtitle">供組員共同討論使用。本階段先確認工作主軸、討論範圍與未來管控欄位，實質工作項目留待下一階段展開。</p>
+      <p class="eyebrow">台北自來水事業處｜60分鐘長官版簡報編制</p>
+      <h1>公共工程全生命週期導入數位賦能：從政策期程、資料共享標準到企業知識財累積</h1>
+      <p class="subtitle">本版聚焦簡報內容編制。核心敘事為：政策推動不是要求所有資料集中於單一平台，而是透過資料交換標準，讓各單位保有自主系統與資料庫，同時具備互通、共享、治理與決策分析能力。</p>
     </header>
 
     <section>
-      <h2>一、討論目的</h2>
-      <p>將主管交辦事項整理為本專案第一版工作管控架構，協助組員先對齊工作方向、分類方式與後續追蹤欄位。</p>
-      <div class="note">本次會議不先決定細部工作項目，重點是確認「要管控哪些工作主軸」以及「未來管控表需要哪些欄位」。</div>
+      <h2>一、60分鐘章節配置</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>章節</th>
+            <th>頁數建議</th>
+            <th>簡報重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0-5分</td>
+            <td>開場與簡報定位</td>
+            <td>2頁</td>
+            <td>說明本次不是系統操作課，而是討論公共工程數位賦能、資料治理、PMIS/CMIS亮點與推動策略。</td>
+          </tr>
+          <tr>
+            <td>5-16分</td>
+            <td>政策宣示與導入期程</td>
+            <td>4頁</td>
+            <td>納入工程會全生命週期數位賦能、PMIS/CMIS無償提供、115-116推廣期、117-118深化期、119-120落實期。</td>
+          </tr>
+          <tr>
+            <td>16-24分</td>
+            <td>數位化是工程共同挑戰的解方</td>
+            <td>3頁</td>
+            <td>工程日益複雜、人力不足、少子化、紙本資料難再利用；數位化是工程管理升級的基礎。</td>
+          </tr>
+          <tr>
+            <td>24-42分</td>
+            <td>資料交換標準：從共同語言到資料共享生態</td>
+            <td>8頁</td>
+            <td>說明資料交換不是把資料全部交給大平台，而是讓各單位自主建置資料庫，再透過標準交換共享。</td>
+          </tr>
+          <tr>
+            <td>42-52分</td>
+            <td>PMIS/CMIS亮點介紹</td>
+            <td>6頁</td>
+            <td>監造報表一鍵匯入、表單倉庫、資料統計分析、友善查核委員、不合格追蹤、材料管理。</td>
+          </tr>
+          <tr>
+            <td>52-56分</td>
+            <td>QA問答環節</td>
+            <td>2頁</td>
+            <td>分成政策導入疑問、現場資安與資料保存疑問兩大張，不逐題拆頁。</td>
+          </tr>
+          <tr>
+            <td>56-60分</td>
+            <td>推動策略與結語</td>
+            <td>2頁</td>
+            <td>先共識、再標準、再試辦、再共享；數據資料庫是工程管理的知識財與智慧財。</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section>
-      <h2>二、工作重點主軸</h2>
-      <div class="grid">
-        <article class="topic">
-          <h3>1. 現場數位表單填寫現況</h3>
-          <p>釐清現場表單是在工地即時填寫，或回到辦公室後補填，並理解背後原因。</p>
-          <ul class="discussion-points">
-            <li>現場填寫與延遲填寫的實際狀況</li>
-            <li>一線人員使用數位表單的理解程度</li>
-            <li>表單標準值是否過於冗長</li>
-          </ul>
+      <h2>二、完整投影片大綱</h2>
+      <div class="slide-list">
+        <article class="slide"><span class="no">1</span><h3>封面</h3><p>公共工程全生命週期導入數位賦能：政策、資料共享標準與PMIS/CMIS應用。</p></article>
+        <article class="slide"><span class="no">2</span><h3>今日簡報重點</h3><p>政策期程、工程挑戰、資料共享標準、系統亮點、QA與推動策略。</p></article>
+        <article class="slide"><span class="no">3</span><h3>為何工程會推動公共工程數位賦能</h3><p>從施工階段紙本三級品管，轉向全生命週期數位治理。</p></article>
+        <article class="slide"><span class="no">4</span><h3>公共工程全生命週期導入觀念</h3><p>計畫、規劃設計、採購招標、履約施工、維管都要納入數位化思維。</p></article>
+        <article class="slide"><span class="no">5</span><h3>PMIS/CMIS導入期程</h3><p>115-116推廣期、117-118深化期、119-120落實期。</p></article>
+        <article class="slide"><span class="no">6</span><h3>近期政策工作重點</h3><p>教育訓練、行政規則、論壇、試辦案件、資料交換、文件保存與資安。</p></article>
+        <article class="slide"><span class="no">7</span><h3>公共工程面臨的共同挑戰</h3><p>工程複雜化、人力不足、少子化、紙本負擔、資料分散。</p></article>
+        <article class="slide"><span class="no">8</span><h3>從電子化到數位化</h3><p>電子化是把紙變檔案；數位化是讓資料可流動、可統計、可分析、可再利用。</p></article>
+        <article class="slide"><span class="no">9</span><h3>數據資料庫是數位時代的核心資產</h3><p>工程資料不只是紀錄，更是組織經驗、企業文化、知識財與智慧財。</p></article>
+        <article class="slide"><span class="no">10</span><h3>不只是把資料交給業主系統</h3><p>若所有資料只以業主平台收集為目標，容易讓監造、廠商、企業變成被動填報者。</p></article>
+        <article class="slide"><span class="no">11</span><h3>大平台集中收資料的隱憂</h3><p>大平台若缺乏交換標準，可能壓縮企業自主發展系統的動能，形成資訊孤島。</p></article>
+        <article class="slide"><span class="no">12</span><h3>健康的數位生態</h3><p>主辦機關、監造單位、施工廠商、地方政府平台都保有自身系統與資料庫，再透過標準交換。</p></article>
+        <article class="slide"><span class="no">13</span><h3>資料交換標準就是共同語言</h3><p>工程名稱、標案、工項、構造物、查驗結果、缺失、照片、材料、時間戳記都要有共同定義。</p></article>
+        <article class="slide"><span class="no">14</span><h3>從共同語彙到API介接</h3><p>API只是通道，真正關鍵是資料欄位、代碼、格式、權責、版本與檢核規則一致。</p></article>
+        <article class="slide"><span class="no">15</span><h3>資料共享才有最大效益</h3><p>資料不只是上傳，而是能回流到各單位，用於查核、報表、統計、決策、改善與AI應用。</p></article>
+        <article class="slide"><span class="no">16</span><h3>上層需求如何落實到現場資料建置</h3><p>政策需求轉成管理標準、表單欄位、現場填報、資料庫、交換共享與儀表板。</p></article>
+        <article class="slide"><span class="no">17</span><h3>工程資料庫是企業的知識財</h3><p>自主發展系統才能累積工程經驗、缺失樣態、材料紀錄與管理方法，形成組織智慧。</p></article>
+        <article class="slide"><span class="no">18</span><h3>PMIS/CMIS在三級品管中的角色</h3><p>CMIS支援施工廠商自主檢查，PMIS支援監造查證與主辦機關管理。</p></article>
+        <article class="slide"><span class="no">19</span><h3>亮點一：監造報表一鍵匯入</h3><p>查驗紀錄、材料紀錄、施工事項可匯入監造報表，減少重複謄寫。</p></article>
+        <article class="slide"><span class="no">20</span><h3>亮點二：表單倉庫</h3><p>月區資料、建物歷程、查驗單數、材料設備、統計資訊、空間大小。</p></article>
+        <article class="slide"><span class="no">21</span><h3>亮點三：資料統計分析</h3><p>查驗筆數、缺失類型、材料設備、最新填報日期，支援管理掌握。</p></article>
+        <article class="slide"><span class="no">22</span><h3>亮點四：友善查核委員設計</h3><p>查核時快速調閱表單、照片、材料紀錄、構造物歷程。</p></article>
+        <article class="slide"><span class="no">23</span><h3>亮點五：不合格追蹤與材料管理</h3><p>缺失改善、複查、材料抽驗、送審與檢試驗資料可被追蹤。</p></article>
+        <article class="slide"><span class="no">24</span><h3>QA一：政策與導入疑問</h3><p>是否強制使用PMIS/CMIS？是否一定要接業主平台？資料交換是否限制各單位自有系統？</p></article>
+        <article class="slide"><span class="no">25</span><h3>QA二：現場、資安與資料保存疑問</h3><p>現場填報不易、是否全面無紙化、資安如何處理、資料如何保存。</p></article>
+        <article class="slide"><span class="no">26</span><h3>推動策略：先共識、再標準、再共享</h3><p>選案試辦、流程調整、表單簡化、資料交換欄位盤點、教育訓練。</p></article>
+        <article class="slide"><span class="no">27</span><h3>結語：擁有自己的數據，才有真正的數位轉型</h3><p>數位化不是把資料交出去，而是讓每個單位累積自己的資料庫，形成知識財與智慧財。</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>三、資料交換標準章節的圖像設計</h2>
+      <p>本章建議使用多張新設計圖像，讓長官能快速理解資料治理語言。以下為可直接轉成投影片的圖像概念。</p>
+      <div class="diagram-grid">
+        <article class="diagram">
+          <h3><span class="pill">圖1</span> 三級品管資料從哪裡來</h3>
+          <div class="visual tower">
+            <div class="tier three">第三級：查核與主管機關</div>
+            <div class="tier two">第二級：監造查證 / PMIS</div>
+            <div class="tier one">第一級：施工自主檢查 / CMIS</div>
+          </div>
+          <p>用三層架構說明資料來源：自主檢查、監造查證、查核管理各自產生資料，但需要能夠向上彙整與橫向交換。</p>
         </article>
 
-        <article class="topic">
-          <h3>2. 一線人員問卷與回饋</h3>
-          <p>透過問卷掌握現場人員的操作經驗、阻礙因素與改善建議。</p>
-          <ul class="discussion-points">
-            <li>問卷欲了解的核心問題</li>
-            <li>受訪對象與回收方式</li>
-            <li>回饋資料後續如何分類與運用</li>
-          </ul>
+        <article class="diagram">
+          <h3><span class="pill">圖2</span> 各自表述會形成資訊孤島</h3>
+          <div class="visual islands">
+            <div class="island">地方平台A<br>自訂欄位</div>
+            <div class="island">企業系統B<br>自訂格式</div>
+            <div class="island">表單檔案C<br>難以再用</div>
+          </div>
+          <p>若沒有共同標準，各單位即使都有系統，也無法互相理解，最後只剩人工轉檔、重複填寫與資料斷裂。</p>
         </article>
 
-        <article class="topic">
-          <h3>3. 駐外辦公場所流程優化</h3>
-          <p>檢視現行流程是否過於僵化，並轉向協助工地實際執行的角度。</p>
-          <ul class="discussion-points">
-            <li>流程文件是否僅為呈報使用</li>
-            <li>應注意事項是否可改以附件清單呈現</li>
-            <li>如何讓流程更能幫助工地</li>
-          </ul>
+        <article class="diagram">
+          <h3><span class="pill">圖3</span> 健康的資料共享生態</h3>
+          <div class="visual">
+            <div class="nodes">
+              <div class="node">主辦機關<br>資料庫</div>
+              <div class="arrow">↔</div>
+              <div class="node">監造單位<br>資料庫</div>
+              <div class="arrow">↔</div>
+              <div class="node">施工廠商<br>資料庫</div>
+            </div>
+            <div class="nodes">
+              <div class="node">地方平台</div>
+              <div class="arrow">↔</div>
+              <div class="node">資料交換標準</div>
+              <div class="arrow">↔</div>
+              <div class="node">查核/決策應用</div>
+            </div>
+          </div>
+          <p>不是所有資料都集中到單一平台，而是各單位保有資料庫，透過共同標準交換共享。</p>
         </article>
 
-        <article class="topic">
-          <h3>4. 材試平台上架後推廣</h3>
-          <p>PMIS全面上架後，需安排推廣、回饋收斂、功能修正與使用督導。</p>
-          <ul class="discussion-points">
-            <li>6/3線上研討回饋與功能修正</li>
-            <li>6月份線上座談會與工聯單邀集</li>
-            <li>7/3駐外主管經驗交流與後續督導</li>
-          </ul>
+        <article class="diagram">
+          <h3><span class="pill">圖4</span> 共同語彙就是資料字典</h3>
+          <div class="visual dictionary">
+            <div class="term">標案</div>
+            <div class="term">工項</div>
+            <div class="term">構造物</div>
+            <div class="term">查驗結果</div>
+            <div class="term">缺失類型</div>
+            <div class="term">材料設備</div>
+            <div class="term">照片附件</div>
+            <div class="term">時間戳記</div>
+            <div class="term">權責來源</div>
+          </div>
+          <p>API只是通道；真正讓系統互通的是欄位語意、代碼、格式、必填規則、版本與檢核方式一致。</p>
         </article>
 
-        <article class="topic">
-          <h3>5. AI客服與知識輔助</h3>
-          <p>思考平台推廣後如何以AI客服、手冊、影片與快速提示降低學習成本。</p>
-          <ul class="discussion-points">
-            <li>文字與語音客服需求</li>
-            <li>手冊、教學影片與亮點提示</li>
-            <li>知識內容如何持續更新</li>
-          </ul>
+        <article class="diagram">
+          <h3><span class="pill">圖5</span> 上層需求如何落實到現場填報</h3>
+          <div class="visual">
+            <div class="nodes">
+              <div class="node">政策需求</div>
+              <div class="arrow">→</div>
+              <div class="node">管理標準</div>
+              <div class="arrow">→</div>
+              <div class="node">表單欄位</div>
+            </div>
+            <div class="nodes">
+              <div class="node">現場填報</div>
+              <div class="arrow">→</div>
+              <div class="node">資料庫</div>
+              <div class="arrow">→</div>
+              <div class="node">儀表板/查核</div>
+            </div>
+          </div>
+          <p>上層想看的管理資訊，必須轉成現場可填、系統可存、平台可交換的資料設計。</p>
         </article>
 
-        <article class="topic">
-          <h3>6. 自來水邀約講座簡報更新</h3>
-          <p>調整60分鐘講課內容，納入政策、標準、系統亮點與數位化效益。</p>
-          <ul class="discussion-points">
-            <li>工程會政策與資料交換標準</li>
-            <li>表單倉庫、DMIS決策層儀表板等亮點</li>
-            <li>功能教學與數位化好處的比例配置</li>
-          </ul>
+        <article class="diagram">
+          <h3><span class="pill">圖6</span> 工程資料庫是企業知識財</h3>
+          <div class="visual">
+            <div class="nodes">
+              <div class="node">工程紀錄</div>
+              <div class="arrow">→</div>
+              <div class="node">資料庫</div>
+              <div class="arrow">→</div>
+              <div class="node">知識庫</div>
+            </div>
+            <div class="nodes">
+              <div class="node">缺失樣態</div>
+              <div class="arrow">→</div>
+              <div class="node">管理經驗</div>
+              <div class="arrow">→</div>
+              <div class="node">AI/決策</div>
+            </div>
+          </div>
+          <p>數位轉型不是只把表單數位化，而是讓工程經驗成為可累積、可查詢、可分析、可傳承的智慧資產。</p>
         </article>
       </div>
     </section>
 
     <section>
-      <h2>三、未來工作管控表欄位</h2>
-      <p class="field-note">以下為後續建立工作管控表時可使用的欄位，本階段先確認欄位是否足夠，不填入細部工作項目。</p>
+      <h2>四、核心訊息</h2>
+      <div class="callout">資料交換標準不是要大家放棄自己的系統，也不是把資料全部送進單一大平台；真正好的做法是：各單位保有自主系統與資料庫，透過共同資料標準交換共享。</div>
       <table>
         <thead>
           <tr>
-            <th>編號</th>
-            <th>工作主軸</th>
-            <th>工作事項</th>
-            <th>負責單位/人員</th>
-            <th>協辦單位/人員</th>
-            <th>目前狀態</th>
-            <th>優先程度</th>
-            <th>預定完成日</th>
-            <th>需協調事項</th>
-            <th>預期產出</th>
-            <th>追蹤備註</th>
+            <th>要避免的方向</th>
+            <th>建議強調的方向</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>各單位各自表述，形成資訊孤島。</td>
+            <td>以共同資料語彙建立可交換、可共享、可治理的工程資料生態。</td>
           </tr>
           <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>所有資料只為上傳業主平台，企業失去自主數據累積。</td>
+            <td>各單位擁有自己的資料庫，資料留在自家，也能依標準共享。</td>
           </tr>
           <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td>把數位化理解為紙本掃描或線上填表。</td>
+            <td>把工程資料變成可統計、可分析、可查核、可決策、可導入AI的知識財。</td>
           </tr>
         </tbody>
       </table>
     </section>
 
-    <section>
-      <h2>四、會議討論順序建議</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>順序</th>
-            <th>討論內容</th>
-            <th>討論目標</th>
-            <th>是否需形成決議</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>確認六大工作主軸是否完整</td>
-            <td>決定本專案第一層分類</td>
-            <td>是</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>確認各主軸下的小標題是否需調整</td>
-            <td>讓後續工作拆解有共同語言</td>
-            <td>是</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>確認管控表欄位是否足夠</td>
-            <td>建立後續追蹤格式</td>
-            <td>是</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>保留實質工作項目至下一階段</td>
-            <td>避免本次會議過早進入細節</td>
-            <td>否</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <p class="footer">版本：V1｜用途：組內討論用｜下一階段：依討論結果展開實質工作項目、責任分工與時程。</p>
+    <p class="footer">版本：2026/05/29｜用途：台北自來水事業處60分鐘簡報內容編制討論｜下一階段：依此大綱製作正式簡報頁面與視覺素材。</p>
   </main>
 </body>
 </html>
